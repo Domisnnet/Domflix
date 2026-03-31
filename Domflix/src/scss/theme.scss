@@ -1,0 +1,17 @@
+:root {
+  /* 🎨 Brand */
+  --color-primary: #E50914;
+  --color-accent: #FF6A00;
+  --color-default: #fff;
+  
+  /* 🌑 Background */
+  --color-bg: #0B0B0B;
+  --color-surface: rgba(255,255,255,0.05);
+  
+  /* 🔥 Glow */
+  --glow-soft: 0 0 10px rgba(255,80,0,0.5);
+  --glow-strong: 0 0 30px rgba(255,50,0,0.9);
+  
+  /* ✨ Cinematic */
+  --light-beam: radial-gradient(circle, rgba(255,80,0,0.4), transparent 70%);
+}

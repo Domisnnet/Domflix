@@ -1,5 +1,5 @@
-@import "scss/style.scss";
-@import "scss/theme.scss";
-@import "scss/tokens.scss";
+@use './styles/style';
+@use './styles/theme';
+@use './styles/tokens';
 
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");

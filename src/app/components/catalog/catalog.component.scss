@@ -1,0 +1,35 @@
+.catalog {
+  padding: 20px;
+}
+
+.movie-section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.movies {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 15px;
+}
+
+.movie {
+  flex: 0 0 auto;
+  width: 150px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+p {
+  color: #fff;
+  margin-top: 10px;
+}

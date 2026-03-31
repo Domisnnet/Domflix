@@ -1,0 +1,11 @@
+<div class="catalog">
+  <div *ngFor="let section of movies" class="movie-section">
+    <h2>{{ section.section }}</h2>
+    <div class="movies">
+      <div *ngFor="let film of section.films" class="movie">
+        <img [src]="film.cover" [alt]="film.title">
+        <p>{{ film.title }}</p>
+      </div>
+    </div>
+  </div>
+</div>

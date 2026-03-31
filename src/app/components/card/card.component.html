@@ -1,7 +1,7 @@
 <h1>Quem está assistindo?</h1>
 <ul class="lista-perfis">
-  <li class="item-perfil">
-    <a href="catalogo/catalogo.html" class="perfil">
+  <li class="item-perfil" (click)="onProfileClick({ name: 'Fernanda', imgSrc: 'assets/images/1.webp' })">
+    <div class="perfil">
       <figure class="avatar-container">
         <span class="imagem-perfil tema-cris" aria-hidden="true">
           <span class="icone-avatar">
@@ -15,10 +15,10 @@
         </span>
         <figcaption class="nome-perfil">Fernanda</figcaption>
       </figure>
-    </a>
+    </div>
   </li>
-  <li class="item-perfil">
-    <a href="catalogo/catalogo.html" class="perfil">
+  <li class="item-perfil" (click)="onProfileClick({ name: 'Fabiana', imgSrc: 'assets/images/2.webp' })">
+    <div class="perfil">
       <figure class="avatar-container">
         <span class="imagem-perfil tema-cris" aria-hidden="true">
           <span class="icone-avatar">
@@ -32,10 +32,10 @@
         </span>
         <figcaption class="nome-perfil">Fabiana</figcaption>
       </figure>
-    </a>
+    </div>
   </li>
-  <li class="item-perfil">
-    <a href="catalogo/catalogo.html" class="perfil">
+  <li class="item-perfil" (click)="onProfileClick({ name: 'Alexander', imgSrc: 'assets/images/3.webp' })">
+    <div class="perfil">
       <figure class="avatar-container">
         <span class="imagem-perfil tema-cris" aria-hidden="true">
           <span class="icone-avatar">
@@ -49,10 +49,10 @@
         </span>
         <figcaption class="nome-perfil">Alexander</figcaption>
       </figure>
-    </a>
+    </div>
   </li>
-  <li class="item-perfil">
-    <a href="catalogo/catalogo.html" class="perfil">
+  <li class="item-perfil" (click)="onProfileClick({ name: 'Dom', imgSrc: 'assets/images/4.webp' })">
+    <div class="perfil">
       <figure class="avatar-container">
         <span class="imagem-perfil tema-cris" aria-hidden="true">
           <span class="icone-avatar">
@@ -66,6 +66,6 @@
         </span>
         <figcaption class="nome-perfil">Dom</figcaption>
       </figure>
-    </a>
+    </div>
   </li>
 </ul>

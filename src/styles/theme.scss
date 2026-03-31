@@ -1,17 +1,17 @@
 :root {
   /* 🎨 Brand */
-  --color-primary: #E50914;
-  --color-accent: #FF6A00;
+  --color-primary: #e50914;
+  --color-accent: #ff6a00;
   --color-default: #fff;
-  
+
   /* 🌑 Background */
-  --color-bg: #0B0B0B;
-  --color-surface: rgba(255,255,255,0.05);
-  
+  --color-bg: #0b0b0b;
+  --color-surface: rgba(255, 255, 255, 0.05);
+
   /* 🔥 Glow */
-  --glow-soft: 0 0 10px rgba(255,80,0,0.5);
-  --glow-strong: 0 0 30px rgba(255,50,0,0.9);
-  
+  --glow-soft: 0 0 10px rgba(255, 80, 0, 0.5);
+  --glow-strong: 0 0 30px rgba(255, 50, 0, 0.9);
+
   /* ✨ Cinematic */
-  --light-beam: radial-gradient(circle, rgba(255,80,0,0.4), transparent 70%);
+  --light-beam: radial-gradient(circle, rgba(255, 80, 0, 0.4), transparent 70%);
 }

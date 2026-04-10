@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
@@ -7,11 +8,9 @@
   color: #fff;
 }
 
-.logo a {
-  font-size: 24px;
-  font-weight: bold;
-  color: #e50914;
-  text-decoration: none;
+nav {
+  display: flex;
+  align-items: center;
 }
 
 nav a {

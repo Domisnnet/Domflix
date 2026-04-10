@@ -11,15 +11,11 @@ import { MovieService } from '../../services/movie.service';
   providers: [MovieService]
 })
 export class CatalogComponent implements OnInit {
-
   movies: any;
-
   constructor(private movieService: MovieService) { }
-
   ngOnInit(): void {
     this.movieService.getMovies().subscribe(data => {
       this.movies = data.movies;
     });
   }
-
 }

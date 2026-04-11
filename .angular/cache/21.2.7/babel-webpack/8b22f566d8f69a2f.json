@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const routes = [{\n  path: '',\n  loadComponent: () => import('./components/card/card.component').then(m => m.AppCardComponent)\n}, {\n  path: 'catalogo',\n  loadComponent: () => import('./components/catalog/catalog.component').then(m => m.CatalogComponent)\n}];","map":null,"metadata":{},"sourceType":"module","externalDependencies":[]}

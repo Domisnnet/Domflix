@@ -1,0 +1,135 @@
+:root {
+  /* TYPOGRAPHY */
+  --font-title: 'Bebas Neue', cursive;
+  --font-subtitle: 'Poppins', sans-serif;
+  
+  /* BLUR */
+  --blur-atmosphere: 80px;
+  --blur-disabled: 0;
+  --blur-header: 12px;
+  --blur-medium: 18px;
+  --blur-plus-weak: 1px;
+  --blur-semi-atmosphere: 60px;
+  --blur-soft: 10px;
+  --blur-subtle: 0.4px;
+  --blur-strong: 26px;
+
+  /* BORDER SYSTEM */
+  --border-medium: 2px;
+  --border-radius: 50px;
+  --border-thick: 3px;
+  --border-thin: 1px;
+  --radius-lg: 20px;
+  --radius-md: 12px;
+  --radius-none: 0px;
+  --radius-sm: 8px;
+  --radius-xs: 4px;
+
+  /* LAYOUT SYSTEM */
+  --container-min: 1100px;
+  --container-max: 1200px;
+  --footer-max-width: 860px;
+  --header-height: 72px;
+
+  /* LETTER SPACING */
+  --letter-normal: 0;
+  --letter-tight: -0.02em;
+  --letter-ultra: 0.2em;
+  --letter-wide: 0.12em;
+
+  /* MOTION SYSTEM */
+  --easing-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --easing-ease-in: cubic-bezier(0.22, 1, 0.36, 1);
+  --easing-default: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --motion-content: 1s;
+  --motion-delay-lg: 0.4s;
+  --motion-delay-md: 0.3s;
+  --motion-delay-sm: 0.2s;
+  --motion-delay-xl: 0.5s;
+  --motion-delay-xs: 0.1s;
+  --motion-fast: 0.25s;
+  --motion-faster: 1.6s;
+  --motion-plus-faster: 2s;
+  --motion-ultra-faster: 14s;
+  --motion-medium: 0.4s;
+  --motion-late: 0.8s;
+  --motion-slow: 0.6s;
+  --transition-fast: var(--motion-fast);
+  --transition-medium: var(--motion-medium);
+  --transition-slow: var(--motion-slow);
+
+  /* OPACITY SYSTEM */
+  --op-active: 0.8;
+  --op-default: 0.25;
+  --op-standard: 0.35;
+  --op-minimal: 0.15;
+  --op-hidden: 0;
+  --op-hover: 0.9;
+  --op-low: 0.6;
+  --op-medium: 0.7;
+  --op-smooth: 0.5;
+  --op-plus-smooth: 0.55;
+  --op-subtle: 0.4;
+  --op-visible: 1;
+
+  /* SHADOW SYSTEM */
+  --shadow-lg: 0 8px var(--size-lg) rgba(0, 0, 0, 0.18);
+  --shadow-md: 0 4px var(--size-md) rgba(0, 0, 0, 0.15);
+  --shadow-sm: 0 2px var(--size-sm) rgba(0, 0, 0, 0.12);
+  --shadow-xs: 0 0 var(--size-xs) rgba(0, 0, 0, 0.1);
+
+  /* SIZE SYSTEM */
+  --size-1xs: 1px;
+  --size-1xs: 1px;
+  --size-2xl: 44px;
+  --size-2xs: 2px;
+  --size-grid: 60px;
+  --size-lg: 24px;
+  --size-load: 28px;
+  --size-logo: 55px;
+  --size-main: 80px;
+  --size-md: 16px;
+  --size-nav-max: 250px;
+  --size-scan: 60px;
+  --size-sm: 12px;
+  --size-toggle: 50px;
+  --size-xl: 32px;
+  --size-xxs: 4px;
+  --size-xs: 8px;
+
+  /* SPACING SYSTEM */
+  --space-lg: 1.5rem;
+  --space-lg-plus: 2rem;
+  --space-loader: 220px;
+  --space-md: 1rem;
+  --space-none: 0;
+  --space-sm: 0.75rem;
+  --space-sm-plus: 1em;
+  --space-toggle: 20px;
+  --space-xl: 2.5rem;
+  --space-xxl: 3rem;
+  --space-xxxl: 4rem;
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+
+  /* FONTS */
+  --font-bold: 800;
+  --font-bolder: 900;
+  --font-display: 2.8rem;
+  --font-lg: 1.25rem;
+  --font-md: 1rem;
+  --font-regular: 400;
+  --font-semibold: 600;
+  --font-sm: 0.875rem;
+  --font-xl: 1.5rem;
+  --font-xxl: 2rem;
+  --font-xxs: 0.5rem;
+  --font-xs: 0.75rem;
+
+  /* Z-INDEX SYSTEM */
+  --z-content: 2;
+  --z-footer: 3;
+  --z-grid: 4;
+  --z-header: 1;
+}

@@ -6,27 +6,33 @@ import { RouterModule } from '@angular/router';
   selector: 'app-button',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  template: `
-    <a *ngIf="routerLink" [routerLink]="routerLink" [ngClass]="classes">
-      <ng-content></ng-content>
-    </a>
-    <button *ngIf="!routerLink" [type]="type" [ngClass]="classes" (click)="onClick.emit($event)">
-      <ng-content></ng-content>
-    </button>
-  `,
-  styleUrls: ['./button.component.scss']
+  templateUrl: './button.component.html',
+  styleUrls: ['./button.component.scss'],
 })
 export class ButtonComponent {
-  @Input() variant: 'primary' | 'outline' = 'primary';
-  @Input() routerLink?: string | any[];
-  @Input() type: 'button' | 'submit' = 'button';
-  @Input() onClick = new EventEmitter<Event>();
+  @Input() variant: 'solid' | 'outline' | 'ghost' = 'solid';
+  @Input() size: 'sm' | 'md' | 'lg' | 'xl' = 'md';
+  @Input() fullWidth = false;
 
-  get classes() {
-    return {
-      'btn': true,
-      'btn-primary': this.variant === 'primary',
-      'btn-outline': this.variant === 'outline',
-    };
+  @Input() type: 'button' | 'submit' | 'reset' = 'button';
+  @Input() disabled = false;
+  @Input() loading = false;
+
+  @Input() href?: string;
+  @Input() target?: string;
+  @Input() rel?: string;
+  @Input() routerLink?: string | any[];
+
+  get mode(): 'external' | 'router' | 'button' {
+    if (this.href) return 'external';
+    if (this.routerLink) return 'router';
+    return 'button';
+  }
+
+  get computedRel(): string | null {
+    if (this.target === '_blank') {
+      return this.rel ?? 'noopener noreferrer';
+    }
+    return this.rel ?? null;
   }
 }

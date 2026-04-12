@@ -1,30 +1,115 @@
-.btn {
+:host {
   display: inline-block;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
+}
+
+/* =========================
+  BASE
+========================= */
+.btn {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  min-height: var(--btn-height-md);
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: 999px;
+  border: var(--border-medium) solid transparent;
+  font-family: var(--font-main);
+  font-size: var(--font-sm);
+  font-weight: var(--font-semibold);
   text-decoration: none;
+  white-space: nowrap;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  outline: none;
+  transition: transform var(--motion-fast),box-shadow var(--motion-fast),background var(--motion-fast),color var(--motion-fast),opacity var(--motion-fast);
+
+  &:focus-visible {
+    box-shadow: 0 0 0 var(--border-thick) rgba(var(--accent-rgb), 0.4);
+  }
+
+  &:hover:not(:disabled) {
+    transform: translateY(calc(var(--size-2xs) * -1));
+    box-shadow: 0 0 var(--size-lg) var(--glow-color);
+  }
+
+  &:disabled {
+    opacity: var(--op-subtle);
+    cursor: not-allowed;
+  }
 }
 
-.btn-primary {
-  background-color: var(--primary-color);
-  color: var(--text-color-light);
-  border: 1px solid var(--primary-color);
+/* =========================
+  VARIANTS
+========================= */
+.btn.solid {
+  background: var(--color-primary);
+  color: var(--text-primary);
 }
 
-.btn-primary:hover {
-  background-color: var(--primary-color-dark);
-  border-color: var(--primary-color-dark);
+.btn.outline {
+  background: transparent;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
-.btn-outline {
-  background-color: transparent;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+.btn.ghost {
+  background: transparent;
+  color: var(--color-primary);
 }
 
-.btn-outline:hover {
-  background-color: var(--primary-color);
-  color: var(--text-color-light);
+/* =========================
+  SIZES
+========================= */
+.btn.sm {
+  font-size: var(--font-xs);
+  padding: var(--space-xs) var(--space-md);
+  min-height: var(--btn-height-sm);
+}
+
+.btn.md {
+  font-size: var(--font-sm);
+  padding: var(--space-sm) var(--space-lg);
+  min-height: var(--btn-height-md);
+}
+
+.btn.lg {
+  font-size: var(--font-md);
+  padding: var(--space-md) var(--space-xl);
+  min-height: var(--btn-height-lg);
+}
+
+.btn.xl {
+  font-size: var(--font-lg);
+  padding: var(--space-lg) calc(var(--space-xl) + var(--size-xxs));
+  min-height: var(--btn-height-xl);
+}
+
+/* =========================
+  WIDTH
+========================= */
+.btn.full-width {
+  width: 100%;
+}
+
+/* =========================
+  LOADING
+========================= */
+.btn.loading {
+  pointer-events: none;
+  position: relative;
+}
+
+.btn.loading .btn-content {
+  opacity: var(--op-hidden);
+}
+
+.btn-loader {
+  position: absolute;
+  width: var(--size-md);
+  height: var(--size-md);
+  border-radius: 999px;
+  border: var(--border-medium) solid var(--color-primary);
+  border-top-color: transparent;
+  animation: spin var(--motion-slow) linear infinite;
 }

@@ -5,20 +5,20 @@
         <img class="logo-dot-img" src="assets/images/Domflix-logo.png" alt="">
       </span>
       <span class="logo-secondary">
-        <img src="assets/images/logo-secondaria.png" alt="Logo Secundário">
+        <img src="assets/images/Logo-secundaria.png" alt="Logo Secundário">
       </span>
     </a>
     <nav class="nav-links" [class.open]="menuOpen()">
     </nav>
     <div class="header-actions">
       <app-theme-toggle />   
-      <button
-        type="button"
-        class="hamburger-menu outline"
-        (click)="toggleMenu()"
+      <app-button
+        variant="outline"
+        class="hamburger-menu"
+        (onClick)="toggleMenu()"
       >
         ☰
-      </button>
+      </app-button>
     </div>
   </div>
 </header>
